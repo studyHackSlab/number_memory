@@ -1,0 +1,199 @@
+@charset "utf-8";
+
+/* 参考画像 */
+/* https://sozai-good.com/illust/animal/cat/40275 */
+
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    /* outline: 1px solid  #f48932; */
+}
+
+html {
+    font-size: 100%;
+    font-family: "Mochiy Pop One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+h2 {
+    font-size: 3rem;
+    margin: 3rem 0;
+}
+
+h3 {
+    font-size: 3.5rem;
+    margin: 2rem 0;
+    height: 3.5rem;
+}
+
+img {
+    width: 65px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+li {
+    list-style: none;
+    border: 2px solid #FFFFFF;
+    padding: 2%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5% 1%;
+    cursor: pointer;
+    pointer-events: none;
+    height: 2.5rem;
+    width: 2.5rem;
+    font-size: 4rem;
+}
+
+li:hover {
+    border-radius: 50%;
+}
+
+span {
+    display: block;
+}
+
+.border {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* border: 2px solid #f48932; */
+
+    outline: 2px solid #f48932;
+    outline-offset: -2px;
+}
+
+.choice {
+    /* border: 2px solid #f48932; */
+    background-color: #f4893284;
+    padding: 1%;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: fit-content; */
+    cursor: pointer;
+    border: 2px solid #f48932;
+    padding: 2%;
+    border-radius: 10px;
+    margin-top: 5%;
+    width: 80%;
+    margin-inline: auto;
+    max-width: 400px;
+}
+
+a:hover {
+    background-color: #f48932;
+}
+
+p {
+    color: #FFFFFF;
+    font-size: 1.5rem;
+    margin: 3%;
+    height: 1.5rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.wrap {
+    flex-wrap: wrap;
+}
+
+.answer {
+    background-color: #f48932;
+}
+
+.events_none {
+    pointer-events: none;
+}
+
+.correct_answer {
+    background-color: #ff4000;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1200px) {
+    body {
+        width: 80%;
+        margin-inline: auto;
+    }
+
+    img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .border {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 2px solid #f48932;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+        width: 50%;
+        margin-inline: auto;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 3rem;
+        margin: 1rem 0;
+    }
+
+    h3 {
+        font-size: 3.5rem;
+        margin: 1rem 0;
+    }
+
+    li {
+        width: 8rem;
+        height: 8rem;
+        font-size: 7rem;
+        margin: 1%;
+    }
+
+    li:hover {
+        border-radius: 50%;
+        /* border: 2px solid #f48932; */
+        background-color: #f48932;
+    }
+
+    p {
+        font-size: 3rem;
+    }
+
+    img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .border {
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 2px solid #f48932;
+    }
+}
